@@ -2,7 +2,19 @@ import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import logo from '../../assets/static/images/logo.png'
 
-class LeftMenu extends Component {
+class SideNav extends Component {
+  toggleDropdown(){
+    console.log('I clicked!'+this.state.shown);
+    this.setState({
+      shown: !this.state.shown
+    });
+  }
+  constructor() {
+		super();
+		this.state = {
+			shown: false,
+		};
+  }
   render(){
     return(
       <div className="sidebar">
@@ -99,8 +111,8 @@ class LeftMenu extends Component {
                   <span className="title">UI Elements</span>
                 </Link>
               </li>
-              <li className="nav-item dropdown">
-                <Link className="dropdown-toggle" to="#">
+              <li className={"nav-item dropdown" + (this.state.shown ? ' open' : '') }>
+                <Link className="dropdown-toggle" onClick={this.toggleDropdown.bind(this)} to="#">
                   <span className="icon-holder">
                     <i className="c-orange-500 ti-layout-list-thumb" />
                   </span>
@@ -206,4 +218,4 @@ class LeftMenu extends Component {
   }
 }
 
-export default LeftMenu;
+export default SideNav;
