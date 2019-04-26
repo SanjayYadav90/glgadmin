@@ -15,7 +15,7 @@ class LeftMenu extends Component {
                     <div className="peers ai-c fxw-nw">
                       <div className="peer">
                         <div className="logo">
-                          <img src={logo} alt />
+                          <img src={logo} alt="" />
                         </div>
                       </div>
                       <div className="peer peer-greed">
@@ -26,9 +26,9 @@ class LeftMenu extends Component {
                 </div>
                 <div className="peer">
                     <div className="mobile-toggle sidebar-toggle">
-                        <a href className="td-n">
+                        <Link to="" className="td-n">
                           <i className="ti-arrow-circle-left" />
-                        </a>
+                        </Link>
                     </div>
                 </div>
               </div>
@@ -44,63 +44,63 @@ class LeftMenu extends Component {
                 </Link>
               </li>
               <li className="nav-item">
-                <a className="sidebar-link" href="email.html">
+                <Link className="sidebar-link" to="email.html">
                   <span className="icon-holder">
                     <i className="c-brown-500 ti-email" />
                   </span>
                   <span className="title">Email</span>
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="sidebar-link" href="compose.html">
+                <Link className="sidebar-link" to="compose.html">
                   <span className="icon-holder">
                     <i className="c-blue-500 ti-share" />
                   </span>
                   <span className="title">Compose</span>
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="sidebar-link" href="calendar.html">
+                <Link className="sidebar-link" to="calendar.html">
                   <span className="icon-holder">
                     <i className="c-deep-orange-500 ti-calendar" />
                   </span>
                   <span className="title">Calendar</span>
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="sidebar-link" href="chat.html">
+                <Link className="sidebar-link" to="chat.html">
                   <span className="icon-holder">
                     <i className="c-deep-purple-500 ti-comment-alt" />
                   </span>
                   <span className="title">Chat</span>
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="sidebar-link" href="charts.html">
+                <Link className="sidebar-link" to="charts.html">
                   <span className="icon-holder">
                     <i className="c-indigo-500 ti-bar-chart" />
                   </span>
                   <span className="title">Charts</span>
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="sidebar-link" href="forms.html">
+                <Link className="sidebar-link" to="forms.html">
                   <span className="icon-holder">
                     <i className="c-light-blue-500 ti-pencil" />
                   </span>
                   <span className="title">Forms</span>
-                </a>
+                </Link>
               </li>
               <li className="nav-item dropdown">
-                <a className="sidebar-link" href="ui.html">
+                <Link className="sidebar-link" to="ui.html">
                   <span className="icon-holder">
                     <i className="c-pink-500 ti-palette" />
                   </span>
                   <span className="title">UI Elements</span>
-                </a>
+                </Link>
               </li>
               <li className="nav-item dropdown">
-                <a className="dropdown-toggle" href="javascript:void(0);">
+                <Link className="dropdown-toggle" to="#">
                   <span className="icon-holder">
                     <i className="c-orange-500 ti-layout-list-thumb" />
                   </span>
@@ -108,18 +108,18 @@ class LeftMenu extends Component {
                   <span className="arrow">
                     <i className="ti-angle-right" />
                   </span>
-                </a>
+                </Link>
                 <ul className="dropdown-menu">
                   <li>
-                    <a className="sidebar-link" href="basic-table.html">Basic Table</a>
+                    <Link className="sidebar-link" to="basic-table.html">Basic Table</Link>
                   </li>
                   <li>
-                    <a className="sidebar-link" href="datatable.html">Data Table</a>
+                    <Link className="sidebar-link" to="datatable.html">Data Table</Link>
                   </li>
                 </ul>
               </li>
               <li className="nav-item dropdown">
-                <a className="dropdown-toggle" href="javascript:void(0);">
+                <Link className="dropdown-toggle" to="#">
                   <span className="icon-holder">
                     <i className="c-purple-500 ti-map" />
                   </span>
@@ -127,18 +127,18 @@ class LeftMenu extends Component {
                   <span className="arrow">
                     <i className="ti-angle-right" />
                   </span>
-                </a>
+                </Link>
                 <ul className="dropdown-menu">
                   <li>
-                    <a href="google-maps.html">Google Map</a>
+                    <Link to="google-maps.html">Google Map</Link>
                   </li>
                   <li>
-                    <a href="vector-maps.html">Vector Map</a>
+                    <Link to="vector-maps.html">Vector Map</Link>
                   </li>
                 </ul>
               </li>
               <li className="nav-item dropdown">
-                <a className="dropdown-toggle" href="javascript:void(0);">
+                <Link className="dropdown-toggle" to="#">
                   <span className="icon-holder">
                     <i className="c-red-500 ti-files" />
                   </span>
@@ -146,54 +146,54 @@ class LeftMenu extends Component {
                   <span className="arrow">
                     <i className="ti-angle-right" />
                   </span>
-                </a>
+                </Link>
                 <ul className="dropdown-menu">
                   <li>
-                    <a className="sidebar-link" href="blank.html">Blank</a>
+                    <Link className="sidebar-link" to="blank.html">Blank</Link>
                   </li>                 
                   <li>
-                    <a className="sidebar-link" href="404.html">404</a>
+                    <Link className="sidebar-link" to="404.html">404</Link>
                   </li>
                   <li>
-                    <a className="sidebar-link" href="500.html">500</a>
+                    <Link className="sidebar-link" to="500.html">500</Link>
                   </li>
                   <li>
-                    <a className="sidebar-link" href="signin.html">Sign In</a>
+                    <Link className="sidebar-link" to="signin.html">Sign In</Link>
                   </li>
                   <li>
-                    <a className="sidebar-link" href="signup.html">Sign Up</a>
+                    <Link className="sidebar-link" to="signup.html">Sign Up</Link>
                   </li>
                 </ul>
               </li>
               <li className="nav-item dropdown">
-                <a className="dropdown-toggle" href="javascript:void(0);">
-                <span className="icon-holder">
+                <Link className="dropdown-toggle" to="#">
+                  <span className="icon-holder">
                     <i className="c-teal-500 ti-view-list-alt" />
-                </span>
-                <span className="title">Multiple Levels</span>
-                <span className="arrow">
+                  </span>
+                  <span className="title">Multiple Levels</span>
+                  <span className="arrow">
                     <i className="ti-angle-right" />
-                </span>
-                </a>
+                  </span>
+                </Link>
                 <ul className="dropdown-menu">
                   <li className="nav-item dropdown">
-                    <a href="javascript:void(0);">
+                    <Link to="#">
                       <span>Menu Item</span>
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item dropdown">
-                    <a href="javascript:void(0);">
+                    <Link to="#">
                       <span>Menu Item</span>
                       <span className="arrow">
                         <i className="ti-angle-right" />
                       </span>
-                    </a>
+                    </Link>
                     <ul className="dropdown-menu">
                       <li>
-                        <a href="javascript:void(0);">Menu Item</a>
+                        <Link to="#">Menu Item</Link>
                       </li>
                       <li>
-                        <a href="javascript:void(0);">Menu Item</a>
+                        <Link to="#">Menu Item</Link>
                       </li>
                     </ul>
                   </li>

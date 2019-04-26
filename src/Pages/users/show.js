@@ -16,7 +16,7 @@ class Show extends Component {
   render() {
     return(
       <div className="card" style={{marginTop: `4%`}} >
-        <img src={`../../../team.jpg`} style={{width: '100%'}} />
+        <img src={`../../../team.jpg`} style={{width: '100%'}} alt="" />
         <h1> {this.state.user.name} </h1>
         <p className="title">Age: {this.state.user.age}</p>
         <p>{this.state.user.email}</p>
