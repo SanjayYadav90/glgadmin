@@ -44,7 +44,7 @@ class LeftMenu extends Component {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="sidebar-link" to="email.html">
+                <Link className="sidebar-link" to="/contact">
                   <span className="icon-holder">
                     <i className="c-brown-500 ti-email" />
                   </span>
@@ -52,7 +52,7 @@ class LeftMenu extends Component {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="sidebar-link" to="compose.html">
+                <Link className="sidebar-link" to="/about">
                   <span className="icon-holder">
                     <i className="c-blue-500 ti-share" />
                   </span>
