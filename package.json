@@ -3,15 +3,26 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.18.0",
+    "bootstrap": "^4.3.1",
+    "bootstrap-datepicker": "^1.8.0",
+    "datatables": "^1.10.18",
+    "node-sass": "^4.11.0",
     "react": "^16.8.6",
+    "react-bootstrap": "^1.0.0-beta.8",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.0"
+    "react-perfect-scrollbar": "^1.5.0",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "3.0.0",
+    "skycons": "^1.0.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "PORT=3500 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint:js": "eslint ./src ./webpack ./*.js -f table --ext .js --ext .jsx",
+    "lint:scss": "stylelint ./src/**/*.scss --syntax scss"
   },
   "eslintConfig": {
     "extends": "react-app"
