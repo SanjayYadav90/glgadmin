@@ -44,35 +44,34 @@ class CategoryNew extends Component {
                                     <div className="mT-30">
                                         <form className="container" id="needs-validation" noValidate>
                                             <div className="row">
-                                                <div className="col-md-6 mb-3">
+                                                <div className="col-md-8 mb-3 offset-md-2">
                                                     <label htmlFor="validationCustom01">First name</label>
                                                     <input type="text" className="form-control" id="validationCustom01" placeholder="First name" defaultValue="Mark" required />
                                                 </div>
-                                                <div className="col-md-6 mb-3">
+                                                <div className="col-md-8 mb-3 offset-md-2">
                                                     <label htmlFor="validationCustom02">Last name</label>
-                                                    <input type="text" className="form-control" id="validationCustom02" placeholder="Last name" defaultValue="Otto" required />
+                                                    <input type="textarea" className="form-control" id="validationCustom02" placeholder="Last name" defaultValue="Otto" required />
                                                 </div>
-                                                </div>
-                                                <div className="row">
-                                                <div className="col-md-6 mb-3">
-                                                    <label htmlFor="validationCustom03">City</label>
-                                                    <input type="text" className="form-control" id="validationCustom03" placeholder="City" required />
-                                                    <div className="invalid-feedback">
-                                                    Please provide a valid city.
+                                            </div>
+                                            <div className="row">
+                                                <div className="col-md-4 mb-3 offset-md-2">
+                                                    <div className="form-group col-md-12">
+                                                        <label htmlFor="inputState">Cream Level</label>
+                                                        <select id="inputState" className="form-control">
+                                                            <option selected>No item selected</option>
+                                                            <option> Full </option>
+                                                            <option> Parchrised </option>
+                                                        </select>
                                                     </div>
                                                 </div>
-                                                <div className="col-md-3 mb-3">
-                                                    <label htmlFor="validationCustom04">State</label>
-                                                    <input type="text" className="form-control" id="validationCustom04" placeholder="State" required />
-                                                    <div className="invalid-feedback">
-                                                    Please provide a valid state.
-                                                    </div>
-                                                </div>
-                                                <div className="col-md-3 mb-3">
-                                                    <label htmlFor="validationCustom05">Zip</label>
-                                                    <input type="text" className="form-control" id="validationCustom05" placeholder="Zip" required />
-                                                    <div className="invalid-feedback">
-                                                    Please provide a valid zip.
+                                                <div className="col-md-3 mb-3 offset-md-1">
+                                                    <div className="form-group col-md-12">
+                                                        <label htmlFor="inputState">Status</label>
+                                                        <select id="inputState" className="form-control">
+                                                            <option selected>No item selected</option>
+                                                            <option>Active</option>
+                                                            <option>Inactive</option>
+                                                        </select>
                                                     </div>
                                                 </div>
                                             </div>
