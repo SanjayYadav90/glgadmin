@@ -56,11 +56,11 @@ class SideNav extends Component {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="sidebar-link" to="/contact">
+                <Link className="sidebar-link" to="/categories">
                   <span className="icon-holder">
                     <i className="c-brown-500 ti-email" />
                   </span>
-                  <span className="title">Email</span>
+                  <span className="title">Categories</span>
                 </Link>
               </li>
               <li className="nav-item">
@@ -72,11 +72,11 @@ class SideNav extends Component {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="sidebar-link" to="calendar.html">
+                <Link className="sidebar-link" to="/users">
                   <span className="icon-holder">
                     <i className="c-deep-orange-500 ti-calendar" />
                   </span>
-                  <span className="title">Calendar</span>
+                  <span className="title">Users</span>
                 </Link>
               </li>
               <li className="nav-item">

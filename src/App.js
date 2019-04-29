@@ -9,10 +9,14 @@ import SideNav from './Pages/Common/SideNav';
 import Home from './Pages/Statics/Home';
 import About from './Pages/Statics/About';
 import Contact from './Pages/Statics/Contact';
-import User from './Pages/users/user';
-import Show from './Pages/users/show';
-import Edit from './Pages/users/Edit';
-import New from './Pages/users/new';
+import User from './Pages/Components/users/user';
+import Show from './Pages/Components/users/show';
+import Edit from './Pages/Components/users/Edit';
+import New from './Pages/Components/users/new';
+import CategoriesList from './Pages/Components/Categories/CategoiesList';
+import CategoryNew from './Pages/Components/Categories/CategoryNew';
+import CategoryEdit from './Pages/Components/Categories/CategoryEdit';
+import CategoryShow from './Pages/Components/Categories/CategoryShow';
 
 const Routing = props => (
   <div>
@@ -24,6 +28,10 @@ const Routing = props => (
       <Route path="/user/:id/edit" component={Edit} />
       <Route path="/user/:id" component={Show} />
       <Route path="/contact" component={Contact} />
+      <Route path="/categories" component={CategoriesList} />
+      <Route path="/caregory/new" component={CategoryNew} />
+      <Route path="/caregory/:id/edit" component={CategoryEdit} />
+      <Route path="/caregory/:id" component={CategoryShow} />
     </Switch>
   </div>
 )
