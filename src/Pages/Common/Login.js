@@ -6,6 +6,7 @@ class Login extends Component {
     return (
         <main className="main-content bgc-grey-100">
             <div id="mainContent">
+            <div className="container-fluid">
                 <div className="row gap-20 masonry pos-r">
                     <div className="offset-md-2 masonry-item col-md-8">
                         <div className="bgc-white p-20 bd">
@@ -44,6 +45,7 @@ class Login extends Component {
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
         </main>
     )

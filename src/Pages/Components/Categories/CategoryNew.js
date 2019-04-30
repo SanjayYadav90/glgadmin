@@ -51,26 +51,28 @@ class CategoryNew extends Component {
                         <div className="row">
                             <div className="offset-md-2 masonry-item col-md-8">
                                 <div className="bgc-white p-20 bd">
-                                    <h6 className="c-grey-900">Validation</h6>
+                                    <h4 className="c-grey-900 mB-20">Add Category</h4>
                                     <div className="mT-30">
-                                        <form onSubmit={this.handleSubmit} className="container" id="needs-validation" noValidate>
-                                            <div className="row">
-                                                <div className="col-md-8 mb-3 offset-md-2">
-                                                    <label htmlFor="user_id">User</label>
-                                                    <input type="text" className="form-control" name="user_id" id="validationCustom01" placeholder="User Id..." required />
+                                        <form onSubmit={this.handleSubmit} >
+                                            <div className="form-group row">
+                                                <label htmlFor="user_id" className="col-sm-2 col-form-label">User</label>
+                                                <div className="col-sm-10">
+                                                    <input type="text" className="form-control" name="user_id" id="user_id" placeholder="User..." />
                                                 </div>
                                             </div>
-                                            <div className="row">
-                                                <div className="col-md-8 mb-3 offset-md-2">
-                                                    <label htmlFor="title">Title</label>
-                                                    <input type="text" className="form-control" name="title" id="validationCustom01" placeholder="Title..." required />
-                                                </div>
-                                                <div className="col-md-8 mb-3 offset-md-2">
-                                                    <label htmlFor="description">Description</label>
-                                                    <input type="textarea" className="form-control" name="description" id="validationCustom02" placeholder="Description..." required />
+                                            <div className="form-group row">
+                                                <label htmlFor="title" className="col-sm-2 col-form-label">Title</label>
+                                                <div className="col-sm-10">
+                                                    <input type="text" className="form-control" name="title" id="title" placeholder="Title..." />
                                                 </div>
                                             </div>
-                                            <div className="row">
+                                            <div className="form-group row">
+                                                <label htmlFor="description" className="col-sm-2 col-form-label">Description</label>
+                                                <div className="col-sm-10">
+                                                    <input type="text" className="form-control" name="description" id="description" placeholder="Description..." />
+                                                </div>
+                                            </div>
+                                            <div className="form-group row">
                                                 <div className="col-md-4 mb-3 offset-md-2">
                                                     <div className="form-group col-md-12">
                                                         <label htmlFor="cream_level">Cream Level</label>
@@ -81,7 +83,7 @@ class CategoryNew extends Component {
                                                         </select>
                                                     </div>
                                                 </div>
-                                                <div className="col-md-3 mb-3 offset-md-1">
+                                                <div className="col-md-4 mb-3 offset-md-1">
                                                     <div className="form-group col-md-12">
                                                         <label htmlFor="status">Status</label>
                                                         <select id="inputState" name="status" className="form-control">
@@ -92,7 +94,11 @@ class CategoryNew extends Component {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <button className="btn btn-primary" type="submit">Submit</button>
+                                            <div className="form-group row">
+                                                <div className="offset-md-4 col-sm-4">
+                                                    <button style={{width: '100%'}} type="submit" className="btn btn-primary">Submit</button>
+                                                </div>
+                                            </div>
                                         </form>
                                     </div>
                                 </div>
