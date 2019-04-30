@@ -222,9 +222,9 @@ class Header extends Component {
               </Link>
               <ul className={"dropdown-menu fsz-sm" + ( this.state.showUser ? ' show' : ' #')}>
                 <li>
-                  <Link to="#" className="d-b td-n pY-5 bgcH-grey-100 c-grey-700">
-                    <i className="ti-settings mR-10" />
-                    <span>Setting</span>
+                  <Link to="/login" className="d-b td-n pY-5 bgcH-grey-100 c-grey-700">
+                    <i className="ti-user mR-10" />
+                    <span>Login</span>
                   </Link>
                 </li>
                 <li>

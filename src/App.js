@@ -17,6 +17,7 @@ import CategoriesList from './Pages/Components/Categories/CategoiesList';
 import CategoryNew from './Pages/Components/Categories/CategoryNew';
 import CategoryEdit from './Pages/Components/Categories/CategoryEdit';
 import CategoryShow from './Pages/Components/Categories/CategoryShow';
+import Login from './Pages/Common/Login';
 
 const Routing = props => (
   <div>
@@ -24,6 +25,7 @@ const Routing = props => (
       <Route path="/" exact component={Home} />
       <Route path="/about" component={About} />
       <Route path="/users" component={User} />
+      <Route path="/login" component={Login} />
       <Route path="/user/new" component={New} />
       <Route path="/user/:id/edit" component={Edit} />
       <Route path="/user/:id" component={Show} />
