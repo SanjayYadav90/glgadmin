@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import Moment from 'react-moment';
 import axios from 'axios';
+// var instance = require('../../../config')
 
 class CategoriesList extends Component {
   state = {
@@ -11,9 +12,9 @@ class CategoriesList extends Component {
   componentDidMount() {
     var headers = {
       'Content-Type': 'application/json',
-      'access_token': '727de2eca135bee172287de7fce7ebf26ffb91f4abde61ed5807e5ca6dd2b0b6a517753977a27a94dc1e24bd54229dda93b0fda64e21ead0833f98b7ba4f84ae' 
+      'access_token': '49ec71eee48d7399f1c692a19c4092447fff9a799597f79189743521d1d290e31ffb135499e287cc503a0cff51467d54069f773f595323cbc6d24e3e22da607e' 
   }
-    axios.get(`/categories_list?uid=5&status=1`, {headers: headers})
+    axios.get(`/categories_list?uid=1&status=1`, {headers: headers})
       .then(res => {
         const categories = res.data;
         this.setState({ categories });
@@ -23,6 +24,7 @@ class CategoriesList extends Component {
     const {categories} = this.state;
     let element= []
     if(categories!==undefined){
+      console.log(categories);
       element= categories.response_data.map(cat=>
         <tr key={cat.id}>
           <td>{cat.id}</td>

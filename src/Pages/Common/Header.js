@@ -2,6 +2,35 @@ import React, {Component} from 'react';
 import { Link} from 'react-router-dom';
 
 class Header extends Component {
+  constructor() {
+		super();
+		this.state = {
+      showUser: false,
+      showEmail: false,
+      showAlert: false
+		};
+  }
+  avatorToggle() {
+		this.setState({
+      showUser: !this.state.showUser,
+      showEmail: false,
+      showAlert: false
+		});
+  }
+  emailToggle() {
+		this.setState({
+      showEmail: !this.state.showEmail,
+      showUser: false,
+      showAlert: false
+		});
+  }
+  alertToggle() {
+		this.setState({
+      showAlert: !this.state.showAlert,
+      showUser: false,
+      showEmail: false
+		});
+	}
   render() {
     return(
       <div className="header navbar">
@@ -23,9 +52,9 @@ class Header extends Component {
             </li>
           </ul>
           <ul className="nav-right">
-            <li className="notifications dropdown">
+            <li className= {"notifications dropdown" + (this.state.showAlert ? ' show' : '')}>
               <span className="counter bgc-red">3</span>
-              <Link to="#" className="dropdown-toggle no-after" data-toggle="dropdown">
+              <Link to="#" onClick={this.alertToggle.bind(this)} className="dropdown-toggle no-after" data-toggle="dropdown">
                 <i className="ti-bell" />
               </Link>
               <ul className="dropdown-menu">
@@ -95,9 +124,9 @@ class Header extends Component {
                 </li>
               </ul>
             </li>
-            <li className="notifications dropdown">
+            <li className={"notifications dropdown" + (this.state.showEmail ? ' show' : '')}>
               <span className="counter bgc-blue">3</span>
-              <Link to="#" className="dropdown-toggle no-after" data-toggle="dropdown">
+              <Link to="#" onClick={this.emailToggle.bind(this)} className="dropdown-toggle no-after" data-toggle="dropdown">
                 <i className="ti-email" />
               </Link>
               <ul className="dropdown-menu">
@@ -182,8 +211,8 @@ class Header extends Component {
                 </li>
               </ul>
             </li>
-            <li className="dropdown">
-              <Link to="#" className="dropdown-toggle no-after peers fxw-nw ai-c lh-1" data-toggle="dropdown">
+            <li className= {"dropdown" + ( this.state.showUser ? ' show' : ' #')}>
+              <Link to="#" onClick={this.avatorToggle.bind(this)} className="dropdown-toggle no-after peers fxw-nw ai-c lh-1" data-toggle="dropdown">
                 <div className="peer mR-10">
                   <img className="w-2r bdrs-50p" src="https://randomuser.me/api/portraits/men/10.jpg" alt="" />
                 </div>
@@ -191,7 +220,7 @@ class Header extends Component {
                   <span className="fsz-sm c-grey-900">John Doe</span>
                 </div>
               </Link>
-              <ul className="dropdown-menu fsz-sm">
+              <ul className={"dropdown-menu fsz-sm" + ( this.state.showUser ? ' show' : ' #')}>
                 <li>
                   <Link to="#" className="d-b td-n pY-5 bgcH-grey-100 c-grey-700">
                     <i className="ti-settings mR-10" />

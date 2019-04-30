@@ -8,9 +8,9 @@ class Show extends Component {
   componentDidMount(){
     var headers = {
       'Content-Type': 'application/json',
-      'access_token': '727de2eca135bee172287de7fce7ebf26ffb91f4abde61ed5807e5ca6dd2b0b6a517753977a27a94dc1e24bd54229dda93b0fda64e21ead0833f98b7ba4f84ae' 
+      'access_token': '49ec71eee48d7399f1c692a19c4092447fff9a799597f79189743521d1d290e31ffb135499e287cc503a0cff51467d54069f773f595323cbc6d24e3e22da607e' 
   }
-    axios.get(`/category_edit?catid=${this.props.match.params.id}&uid=5&status=1`, {headers: headers})
+    axios.get(`/category_view?catid=${this.props.match.params.id}&uid=5&status=1`, {headers: headers})
     .then(
       res => {
         const category = res.data;
